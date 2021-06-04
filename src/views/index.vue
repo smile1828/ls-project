@@ -3,15 +3,17 @@
     <el-header height="50px">
     </el-header>
     <el-container direction="horizontal">
-      <el-aside ></el-aside>
+      <el-aside><aside-menu></aside-menu></el-aside>
       <el-main></el-main>
     </el-container>
   </el-container>
 </template>
 
 <script>
+import AsideMenu from '@components/layout/aside-menu.vue'
 export default {
-  name: 'index'
+  name: 'index',
+  components: { AsideMenu }
 }
 </script>
 
