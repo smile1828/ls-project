@@ -4,7 +4,7 @@
     </el-header>
     <el-container direction="horizontal">
       <el-aside><aside-menu></aside-menu></el-aside>
-      <el-main></el-main>
+      <el-main><router-view/></el-main>
     </el-container>
   </el-container>
 </template>
