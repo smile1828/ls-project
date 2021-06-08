@@ -18,6 +18,11 @@ const menuList = [
         id: '0201',
         label: '基本使用',
         url: '/baseUse'
+      },
+      {
+        id: '0202',
+        label: '动态路由匹配',
+        url: '/index/dynamicMatch'
       }
     ]
   }

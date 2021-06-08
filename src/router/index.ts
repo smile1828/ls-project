@@ -12,7 +12,14 @@ const routes: Array<RouteConfig> = [
   {
     path: '/index',
     name: 'index',
-    component: () => import('@views/index.vue')
+    component: () => import('@views/index.vue'),
+    children: [
+      {
+        path: '/index/dynamicMatch',
+        name: 'dynamicMatch',
+        component: () => import('@views/router/dynamic-match.vue')
+      }
+    ]
   },
   {
     path: '/about',

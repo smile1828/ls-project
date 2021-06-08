@@ -7,7 +7,11 @@
         <span>{{item.label}}</span>
       </template>
       <el-menu-item-group>
-        <el-menu-item :index="menu.id" v-for="(menu) in item.list" :key="menu.id">{{ menu.label }}</el-menu-item>
+        <el-menu-item
+          :index="menu.id"
+          v-for="(menu) in item.list"
+          :key="menu.id"
+          @click="goPages(menu)">{{ menu.label }}</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
   </el-menu>
@@ -20,6 +24,13 @@ export default {
   data () {
     return {
       menuList: menuList
+    }
+  },
+  methods: {
+    goPages (menu) {
+      this.$router.push({
+        path: menu.url
+      })
     }
   }
 }
