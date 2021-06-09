@@ -22,7 +22,7 @@ const menuList = [
       {
         id: '0202',
         label: '动态路由匹配',
-        url: '/index/dynamicMatch'
+        url: '/index/router'
       }
     ]
   }
