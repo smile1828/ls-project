@@ -87,6 +87,34 @@ const routes: Array<RouteConfig> = [
               requiresAuth: true,
               title: 'hahahah'
             }
+          },
+          {
+            path: 'transition-a',
+            name: 'transition-a',
+            components: {
+              transitionAll: () => import('@views/router/transition/components/compA.vue')
+            }
+          },
+          {
+            path: 'transition-b',
+            name: 'transition-b',
+            components: {
+              transitionAll: () => import('@views/router/transition/components/compB.vue')
+            }
+          },
+          {
+            path: 'transition-c',
+            name: 'transition-c',
+            components: {
+              transitionDiff: () => import('@views/router/transition/components/compC.vue')
+            }
+          },
+          {
+            path: 'transition-d',
+            name: 'transition-d',
+            components: {
+              transitionDiff: () => import('@views/router/transition/components/compD.vue')
+            }
           }
         ]
       }

@@ -10,6 +10,8 @@
     <pass-arguments></pass-arguments>
     <div class="ls-h1">路由元信息</div>
     <meta-info></meta-info>
+    <div class="ls-h1">过渡效果</div>
+    <transition-comp></transition-comp>
   </div>
 </template>
 
@@ -19,6 +21,7 @@ import Program from './program/program.vue'
 import NominateView from './nominate-view/nominate-view.vue'
 import PassArguments from './pass-arguments/pass-arguments.vue'
 import MetaInfo from './meta-info/meta-info'
+import TransitionComp from './transition/transition-comp'
 export default {
   name: 'router',
   components: {
@@ -26,7 +29,8 @@ export default {
     Program,
     NominateView,
     PassArguments,
-    MetaInfo
+    MetaInfo,
+    TransitionComp
   }
 }
 </script>
