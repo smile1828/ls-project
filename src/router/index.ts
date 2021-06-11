@@ -117,6 +117,11 @@ const routes: Array<RouteConfig> = [
             }
           }
         ]
+      },
+      {
+        path: 'router-scroll',
+        name: 'router-scroll',
+        component: () => import('@views/router/scroll/components/scroll-example.vue')
       }
     ]
   },
@@ -136,7 +141,11 @@ const routes: Array<RouteConfig> = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    // return 期望滚动到哪个的位置
+    return { x: 0, y: 0 }
+  }
 })
 
 export default router

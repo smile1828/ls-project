@@ -12,6 +12,8 @@
     <meta-info></meta-info>
     <div class="ls-h1">过渡效果</div>
     <transition-comp></transition-comp>
+    <div class="ls-h1">滚动行为</div>
+    <scroll-comp></scroll-comp>
   </div>
 </template>
 
@@ -22,6 +24,7 @@ import NominateView from './nominate-view/nominate-view.vue'
 import PassArguments from './pass-arguments/pass-arguments.vue'
 import MetaInfo from './meta-info/meta-info'
 import TransitionComp from './transition/transition-comp'
+import ScrollComp from './scroll/scroll-comp.vue'
 export default {
   name: 'router',
   components: {
@@ -30,7 +33,8 @@ export default {
     NominateView,
     PassArguments,
     MetaInfo,
-    TransitionComp
+    TransitionComp,
+    ScrollComp
   }
 }
 </script>
