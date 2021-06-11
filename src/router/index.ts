@@ -75,6 +75,18 @@ const routes: Array<RouteConfig> = [
                 return { title: route.query.title + 'yyy' }
               }
             }
+          },
+          {
+            path: 'metaInfo',
+            name: 'metaInfo',
+            components: {
+              metaInfo: () => import('@views/router/meta-info/components/meta-info-example.vue')
+            },
+            meta: {
+              keepAlive: true,
+              requiresAuth: true,
+              title: 'hahahah'
+            }
           }
         ]
       }

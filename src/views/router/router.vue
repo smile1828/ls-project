@@ -8,6 +8,8 @@
     <nominate-view></nominate-view>
     <div class="ls-h1">路由组件传参</div>
     <pass-arguments></pass-arguments>
+    <div class="ls-h1">路由元信息</div>
+    <meta-info></meta-info>
   </div>
 </template>
 
@@ -16,13 +18,15 @@ import DynamicMatch from './dynamic-match/dynamic-match.vue'
 import Program from './program/program.vue'
 import NominateView from './nominate-view/nominate-view.vue'
 import PassArguments from './pass-arguments/pass-arguments.vue'
+import MetaInfo from './meta-info/meta-info'
 export default {
   name: 'router',
   components: {
     DynamicMatch,
     Program,
     NominateView,
-    PassArguments
+    PassArguments,
+    MetaInfo
   }
 }
 </script>
