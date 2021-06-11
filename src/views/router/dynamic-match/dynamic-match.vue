@@ -22,6 +22,13 @@
     <div class="ls-h4 danger">说明：</div>
     <p class="ls-p danger">动态路由实现页面跳转时，如果是path则直接在地址后添加参数，如果是使用params传递参数，要配合name使用</p>
     <el-divider></el-divider>
+    <div class="ls-h4">通配符</div>
+    <router-link to='/index/router/wildcard-abcdefg' tag="div" class="ls-button">Go To wildcard-abcdefg</router-link>
+    <router-link to='/index/router/wildcard-hijklmn' tag="div" class="ls-button">Go To wildcard-hijklmn</router-link>
+    <el-divider></el-divider>
+    <div class="ls-h4">404页面</div>
+    <router-link to='/abc/efg' tag="div" class="ls-button">Go To /abc/efg</router-link>
+    <el-divider></el-divider>
     <router-view></router-view>
   </div>
 </template>

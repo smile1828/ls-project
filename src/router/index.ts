@@ -15,17 +15,66 @@ const routes: Array<RouteConfig> = [
     component: () => import('@views/index.vue'),
     children: [
       {
-        path: '/index/router',
+        path: 'router',
         name: 'router',
         component: () => import('@views/router/router.vue'),
         children: [
           {
-            path: '/index/router/dynamicMatchExample/:title',
+            path: 'dynamicMatchExample/:title',
             name: 'dynamicMatchExample',
             component: () =>
               import(
                 '@views/router/dynamic-match/components/dynamic-match-example.vue'
               )
+          },
+          {
+            path: 'wildcard-*',
+            name: 'wildcard',
+            component: () =>
+              import(
+                '@views/router/dynamic-match/components/wildcard-example.vue'
+              )
+          },
+          {
+            path: 'nominateView',
+            name: 'nominateView',
+            components: {
+              a: () => import('@views/router/nominate-view/components/compA.vue'),
+              b: () => import('@views/router/nominate-view/components/compB.vue'),
+              c: () => import('@views/router/nominate-view/components/compC.vue')
+            }
+          },
+          {
+            path: 'passArgument-a/:title',
+            name: 'passArgument-a',
+            components: {
+              passArgument: () => import('@views/router/pass-arguments/components/pass-arguments-example.vue')
+            },
+            props: {
+              passArgument: true
+            }
+          },
+          {
+            path: 'passArgument-b',
+            name: 'passArgument-b',
+            components: {
+              passArgument: () => import('@views/router/pass-arguments/components/pass-arguments-example.vue')
+            },
+            props: {
+              passArgument: { title: '哈哈哈哈' }
+            }
+          },
+          {
+            path: 'passArgument-c',
+            name: 'passArgument-c',
+            components: {
+              passArgument: () => import('@views/router/pass-arguments/components/pass-arguments-example.vue')
+            },
+            props: {
+              passArgument: route => {
+                return { title: route.query.title + 'yyy' }
+              }
+            }
           }
         ]
       }
@@ -39,6 +88,10 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '*',
+    component: () => import('../views/404/404.vue')
   }
 ]
 
