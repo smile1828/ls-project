@@ -122,6 +122,11 @@ const routes: Array<RouteConfig> = [
         path: 'router-scroll',
         name: 'router-scroll',
         component: () => import('@views/router/scroll/components/scroll-example.vue')
+      },
+      {
+        path: 'event-modifier',
+        name: 'event-modifier',
+        component: () => import('@views/event-modifier/event-modifier.vue')
       }
     ]
   },

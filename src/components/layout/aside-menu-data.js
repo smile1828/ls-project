@@ -25,6 +25,17 @@ const menuList = [
         url: '/index/router'
       }
     ]
+  },
+  {
+    id: '0300',
+    label: '事件修饰符',
+    list: [
+      {
+        id: '0301',
+        label: '事件修饰符',
+        url: '/index/event-modifier'
+      }
+    ]
   }
 ]
 export default menuList
