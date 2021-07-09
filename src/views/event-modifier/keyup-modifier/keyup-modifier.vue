@@ -48,9 +48,12 @@
         <p class="ls-p">Vue.config.keyCodes 中可以全局配置按键修饰符别名</p>
         <p class="ls-p">例如，在 main.js 中配置如下</p>
         <p class="ls-p">Vue.config.keyCodes = { v: 86 }</p>
+        <p class="ls-p">可以使用 .v 作为修饰符</p>
         <el-button size="small" plain @click="revertMessage3">重置</el-button>
         <input v-model="value3" @keyup.v="submit3" class="input">
         <p class="ls-p" v-html="message3"></p>
+        <div class="ls-h4 danger">说明：</div>
+        <p class="ls-p danger">在 Vue.config.keyCodes 中配置时，不支持驼峰，要使用中划线</p>
       </div>
     </div>
   </div>
