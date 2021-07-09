@@ -34,6 +34,11 @@ const menuList = [
         id: '0301',
         label: '事件修饰符',
         url: '/index/event-modifier'
+      },
+      {
+        id: '0302',
+        label: '按键修饰符',
+        url: '/index/keyup-modifier'
       }
     ]
   }

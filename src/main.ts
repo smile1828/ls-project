@@ -14,6 +14,10 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
+Vue.config.keyCodes = {
+  v: 86
+}
+
 new Vue({
   router,
   store,
