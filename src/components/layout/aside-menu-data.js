@@ -39,6 +39,11 @@ const menuList = [
         id: '0302',
         label: '按键修饰符',
         url: '/index/keyup-modifier'
+      },
+      {
+        id: '0303',
+        label: '系统修饰符',
+        url: '/index/system-modifier'
       }
     ]
   }

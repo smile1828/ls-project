@@ -132,6 +132,11 @@ const routes: Array<RouteConfig> = [
         path: 'keyup-modifier',
         name: 'keyup-modifier',
         component: () => import('@views/event-modifier/keyup-modifier/keyup-modifier.vue')
+      },
+      {
+        path: 'system-modifier',
+        name: 'system-modifier',
+        component: () => import('@views/event-modifier/system-modifier/system-modifier.vue')
       }
     ]
   },
