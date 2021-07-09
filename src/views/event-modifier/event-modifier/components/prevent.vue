@@ -7,16 +7,16 @@
       <div>
         <p class="ls-p">没有使用修饰符:</p>
         <form action="submit">
-          <div>{{message}}</div>
           <button type="submit" @click="submit">我是表单中的提交按钮</button>
         </form>
+        <div class="ls-p">{{message}}</div>
       </div>
       <div style="margin-left: 20px">
         <p class="ls-p">使用 .prevent 修饰符:</p>
         <form action="submit">
-          <div>{{modifierMessage}}</div>
           <button type="submit" @click.prevent="modifierSubmit">我是表单中的提交按钮</button>
         </form>
+        <div class="ls-p">{{modifierMessage}}</div>
       </div>
     </div>
   </div>

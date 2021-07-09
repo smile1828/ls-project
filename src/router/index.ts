@@ -126,7 +126,7 @@ const routes: Array<RouteConfig> = [
       {
         path: 'event-modifier',
         name: 'event-modifier',
-        component: () => import('@views/event-modifier/event-modifier.vue')
+        component: () => import('@views/event-modifier/event-modifier/event-modifier.vue')
       }
     ]
   },
