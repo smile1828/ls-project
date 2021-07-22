@@ -137,6 +137,16 @@ const routes: Array<RouteConfig> = [
         path: 'system-modifier',
         name: 'system-modifier',
         component: () => import('@views/event-modifier/system-modifier/system-modifier.vue')
+      },
+      {
+        path: 'component-modifier',
+        name: 'component-modifier',
+        component: () => import('@views/event-modifier/component-modifier/component-modifier.vue')
+      },
+      {
+        path: 'async-component',
+        name: 'async-component',
+        component: () => import('@views/async-component/async-component.vue')
       }
     ]
   },

@@ -44,6 +44,22 @@ const menuList = [
         id: '0303',
         label: '系统修饰符',
         url: '/index/system-modifier'
+      },
+      {
+        id: '0304',
+        label: '组件修饰符',
+        url: '/index/component-modifier'
+      }
+    ]
+  },
+  {
+    id: '0400',
+    label: '异步组件',
+    list: [
+      {
+        id: '0401',
+        label: '异步组件',
+        url: '/index/async-component'
       }
     ]
   }
