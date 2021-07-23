@@ -147,6 +147,11 @@ const routes: Array<RouteConfig> = [
         path: 'async-component',
         name: 'async-component',
         component: () => import('@views/async-component/async-component.vue')
+      },
+      {
+        path: 'watch',
+        name: 'watch',
+        component: () => import('@views/watch/watch.vue')
       }
     ]
   },
@@ -166,11 +171,11 @@ const routes: Array<RouteConfig> = [
 ]
 
 const router = new VueRouter({
-  routes,
-  scrollBehavior (to, from, savedPosition) {
-    // return 期望滚动到哪个的位置
-    return { x: 0, y: 0 }
-  }
+  routes
+  // scrollBehavior (to, from, savedPosition) {
+  //   // return 期望滚动到哪个的位置
+  //   return { x: 0, y: 0 }
+  // }
 })
 
 export default router

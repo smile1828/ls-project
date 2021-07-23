@@ -16,7 +16,15 @@
 
 <script>
 export default {
-  name: 'transition-comp'
+  name: 'transition-comp',
+  watch: {
+    $route: {
+      handler (to, from) {
+        console.log(to)
+        console.log(from)
+      }
+    }
+  }
 }
 </script>
 

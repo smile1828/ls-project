@@ -32,6 +32,14 @@ export default {
         path: menu.url
       })
     }
+  },
+  watch: {
+    $route: {
+      handler (to, from) {
+        console.log(to)
+        console.log(from)
+      }
+    }
   }
 }
 </script>

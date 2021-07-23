@@ -62,6 +62,17 @@ const menuList = [
         url: '/index/async-component'
       }
     ]
+  },
+  {
+    id: '0500',
+    label: 'watch侦听器',
+    list: [
+      {
+        id: '0501',
+        label: 'watch',
+        url: '/index/watch'
+      }
+    ]
   }
 ]
 export default menuList
